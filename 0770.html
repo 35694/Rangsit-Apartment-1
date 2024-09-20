@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangsit Apartment 1</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eb75b0;
+        }
+
+        /* ส่วนหัวเมนู */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(135, 200, 253);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background-image: url('apartment-hero.jpg'); /* ใช้รูปภาพของคุณ */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        /* ส่วนแสดงห้องพัก */
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 50px 10%;
+            background-color: white;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img {
+            width: 200px; /* กำหนดความกว้าง */
+            height: 150px; /* กำหนดความสูง */
+            object-fit: cover; /* ปรับให้รูปขยาย/ย่อเพื่อให้พอดีกับขนาด */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* ปุ่ม Scroll Down */
+        .scroll-btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .scroll-btn:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ส่วนหัวของเว็บไซต์ -->
+    <header>
+        <h1>Rangsit Apartment 1</h1>
+        <nav>
+            <ul><li>
+                <a href="https://thumb.ac-illust.com/55/554d732bc1aa1b4afd2e05b10f556036_w.jpeg">Home</a>
+                <a href="https://www.renthub.in.th/%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B8%95%E0%B8%AD%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B9%80%E0%B8%A1%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C-1-2">Details</a>
+                <a href="https://www.google.com/maps/place/Rangsit+Apartment+1/@13.9871179,100.6112212,17z/data=!3m1!4b1!4m6!3m5!1s0x30e281dc170da01d:0x14abe16422bbeba4!8m2!3d13.9871179!4d100.6137961!16s%2Fg%2F1hc10kf04?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D">Google map</a>
+                <a href="02 959 1920">Contact</a>
+
+            </li></ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to Rangsit Apartment 1</h1>
+            <p>Your perfect home near the university</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="rooms">
+        <img src="37.jpg" alt="Room 1">
+        <img src="38.jpg" alt="Room 2">
+        <img src="39.jpg" alt="Room 3">
+        <img src="41.1.jpg" alt="Room 4">
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contact us at: 02 959 1920 | Address: Route: 31 Soi Rangsit-Pathum Thani 5, Democrat Party Office, Thanyaburi, Pathum Thani 12130</p>
+    </footer>
+
+</body>
+</html>
